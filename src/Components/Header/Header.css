@@ -1,0 +1,123 @@
+.header {
+   width: 100%;
+   background: var(--background-gradient);
+   color: var(--text-color);
+   position: fixed;
+   z-index: 3;
+}
+.shadow {
+   box-shadow: inset 0 0 1px #000, 0 0 2px #000;
+}
+.header__logo {
+   font-size: 30px;
+   font-style: italic;
+   font-weight: 500;
+   letter-spacing: 2px;
+   background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.header__menu {
+   padding: 5px 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.menu div {
+   display: flex;
+   background-color: transparent;
+}
+.menu__item {
+   position: relative;
+   color: var(--text-color);
+   padding: 10px;
+}
+
+.menu__item::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   display: block;
+   width: 0;
+   height: 1px;
+   background: var(--text-color-dark);
+   transition: width 0.3s;
+}
+
+.menu__item:hover::after {
+   width: 100%;
+   transition: width 0.3s;
+}
+.ant-anchor-link-active .menu__item::after {
+   width: 100%;
+}
+.ant-anchor-link-active .menu__item,
+.menu__item:hover {
+   cursor: pointer;
+   color: var(--text-color-dark);
+}
+.ant-anchor-wrapper .ant-anchor .ant-anchor-ink {
+   height: 0px;
+}
+.header__buttons {
+   padding: 15px 0px;
+   display: flex;
+   align-items: center;
+}
+.switch {
+   cursor: pointer;
+   margin: 0 20px;
+}
+.menu {
+   display: flex;
+}
+.menu__button {
+   font-size: 24px;
+   display: none;
+   cursor: pointer;
+}
+.ant-drawer-content.menu__drawer {
+   background-color: var(--background-color);
+}
+
+.menu__drawer .ant-drawer-body {
+   display: flex;
+   flex-direction: column;
+}
+
+@media (max-width: 992px) {
+   .header__logo {
+      font-size: 24px;
+   }
+   .header__menu {
+      padding: 5px 10px;
+   }
+   .switch {
+      margin: 0 5px;
+   }
+}
+
+@media (max-width: 768px) {
+   .menu__button {
+      display: block;
+   }
+   .menu {
+      display: none;
+   }
+   .header__buttons {
+      padding: 5px 0;
+   }
+   .menu__item {
+      width: 100%;
+      font-size: 24px;
+   }
+}
+
+@media (max-width: 576px) {
+   .menu__item {
+      font-size: 20px;
+   }
+}

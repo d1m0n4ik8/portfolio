@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+/*==================   CLASSES   ======================*/
+.section {
+   padding-top: 100px;
+   padding-bottom: 50px;
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+}
+.section__title {
+   color: var(--text-color);
+   font-size: 30px;
+}
+.section__description {
+   color: var(--text-color-dark);
+   font-size: 24px;
+}
+.w100 {
+   width: 100%;
+}
+.h100 {
+   height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-steps .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
+   background-color: transparent;
+}
+.steps .ant-steps-item .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title,
+.steps .ant-steps-item .ant-steps-item-container .ant-steps-item-content .ant-steps-item-description,
+.steps .ant-steps-item-wait .ant-steps-item-container .ant-steps-item-icon span {
+   color: var(--text-color);
+}
+.steps .ant-steps-item-wait .ant-steps-item-container .ant-steps-item-icon {
+   border-color: var(--text-color);
+}
+.ant-steps .ant-steps-item-container {
+   display: flex;
+   justify-content: center;
+}
+.ant-steps-item .ant-steps-item-content {
+   min-width: 150px;
+}
+.ant-tabs-nav-list .ant-tabs-tab {
+   color: var(--text-color);
+}
+.ant-tabs-nav-list .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
+.ant-tabs-nav-list .ant-tabs-tab:hover {
+   color: var(--text-color-dark);
+}
+.ant-tabs-nav-list .ant-tabs-ink-bar {
+   background-color: var(--text-color-dark);
+}
+.ant-steps-item-tail::after {
+   background-color: transparent;
+}
+.ant-input {
+   background-color: inherit;
+}
+.ant-input::placeholder {
+   color: var(--text-color);
+}
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover {
+   left: 10px;
+   z-index: 1;
+   color: var(--text-color-dark);
+   font-size: 30px;
+   width: 30px;
+   height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover {
+   right: 10px;
+   z-index: 1;
+   color: var(--text-color-dark);
+   font-size: 30px;
+   width: 30px;
+   height: 30px;
+}
+/*==================   LOYOUT   ======================*/
+.app {
+   background: var(--background-gradient);
+   overflow: hidden;
+}
+.container {
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.devider {
+   background-color: var(--text-color);
+   margin: 0;
+}
+.card {
+   background-color: var(--background-color);
+   border-radius: 25px;
+   text-align: center;
+   font-size: 18px;
+   color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+/*==================   BREACKPOINTS   ======================*/
+@media (max-width: 992px) {
+   .section {
+      padding-top: 50px;
+   }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+   .container {
+      padding: 5px;
+   }
 }

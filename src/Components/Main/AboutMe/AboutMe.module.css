@@ -1,0 +1,77 @@
+.aboutMe {
+   padding: 10px;
+}
+.photo {
+   width: 325px;
+   height: 325px;
+   object-fit: cover;
+   border-radius: 50px;
+}
+.statistic {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   color: var(--text-color-dark);
+   font-size: 24px;
+}
+.statistic__icon {
+   color: var(--text-color);
+   font-size: 30px;
+}
+.description {
+   padding: 15px 10px;
+   font-size: 24px;
+   text-align: justify;
+   text-indent: 20px;
+}
+
+.tab {
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+}
+.timeLine div {
+   color: var(--text-color);
+}
+
+.tab__icon {
+   font-size: 24px;
+   margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+   .photo {
+      width: 290px;
+      height: 290px;
+   }
+   .statistic {
+      font-size: 18px;
+   }
+   .statistic__icon {
+      font-size: 20px;
+   }
+   .description {
+      font-size: 18px;
+   }
+}
+@media (max-width: 768px) {
+   .photo {
+      width: 320px;
+      height: 320px;
+   }
+   .statistic {
+      font-size: 20px;
+   }
+   .statistic__icon {
+      font-size: 24px;
+   }
+   .description {
+      font-size: 20px;
+   }
+}
+@media (max-width: 576px) {
+   .photo {
+      width: 250px;
+      height: 250px;
+   }
+}
