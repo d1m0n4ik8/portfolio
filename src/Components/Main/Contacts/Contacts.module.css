@@ -1,3 +1,6 @@
+.contacts {
+   padding: 10px;
+}
 .text {
    font-size: 30px;
    text-align: center;
@@ -6,6 +9,7 @@
 .icon {
    font-size: 30px;
    color: var(--text-color);
+   transition: color 250ms linear;
 }
 .button {
    padding-top: 15px;
@@ -15,4 +19,18 @@
 }
 .arrow {
    margin-left: 10px;
+}
+.input input,
+.textarea {
+   color: var(--text-color);
+   background-color: var(--background-color);
+}
+.input input::placeholder,
+.textarea::placeholder {
+   color: var(--text-color);
+}
+.label {
+   display: block;
+   font-size: 20px;
+   padding: 10px 0;
 }

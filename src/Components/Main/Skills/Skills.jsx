@@ -14,56 +14,56 @@ export default function Skills() {
                <div className={s.card__info}>
                   <Row gutter={[0, 16]}>
                      <Col span={24} className={s.card__header}>
-                        Frontend developer
+                        Frontend
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
                            HTML
                         </Space>
-                        <div>Basic</div>
+                        <div>Experienced</div>
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
                            CSS
                         </Space>
-                        <div>Basic</div>
+                        <div>Experienced</div>
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
                            JavaScript
                         </Space>
-                        <div>Basic</div>
+                        <div>Experienced</div>
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
                            React
                         </Space>
-                        <div>Basic</div>
+                        <div>Skillful</div>
+                     </Col>
+                     <Col span={12} className={s.card__col}>
+                        <Space>
+                           <BsFillPatchCheckFill />
+                           Redux
+                        </Space>
+                        <div>Skillful</div>
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
                            Bootstrap
                         </Space>
-                        <div>Basic</div>
+                        <div>Skillful</div>
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
-                           Ant design
+                           Ant Design
                         </Space>
-                        <div>Basic</div>
-                     </Col>
-                     <Col span={12} className={s.card__col}>
-                        <Space>
-                           <BsFillPatchCheckFill />
-                           Git
-                        </Space>
-                        <div>Basic</div>
+                        <div>Experienced</div>
                      </Col>
                   </Row>
                </div>
@@ -72,19 +72,19 @@ export default function Skills() {
                <div className={s.card__info}>
                   <Row gutter={[0, 16]} justify="space-between">
                      <Col span={24} className={s.card__header}>
-                        Backend developer
+                        Additional
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
-                           SQL
+                           Git
                         </Space>
                         <div>Basic</div>
                      </Col>
                      <Col span={12} className={s.card__col}>
                         <Space>
                            <BsFillPatchCheckFill />
-                           Redux
+                           SQL
                         </Space>
                         <div>Basic</div>
                      </Col>

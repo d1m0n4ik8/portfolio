@@ -12,9 +12,9 @@ export default function SwitchTheme() {
    return (
       <>
          {cheaked ? (
-            <BsSunFill onClick={toggleTheme} color="var(--text-color)" fontSize={18} />
+            <BsSunFill onClick={toggleTheme} color="var(--text-color)" fontSize={20} />
          ) : (
-            <BsMoonStarsFill onClick={toggleTheme} color="var(--text-color)" fontSize={18} />
+            <BsMoonStarsFill onClick={toggleTheme} color="var(--text-color)" fontSize={20} />
          )}
       </>
    )

@@ -1,73 +1,67 @@
 import { SlUser } from 'react-icons/sl'
 import { AiOutlineMail } from 'react-icons/ai'
 import { BiSend } from 'react-icons/bi'
-import { Form, Input } from 'antd'
+import { Input, message } from 'antd'
 import TextArea from 'antd/es/input/TextArea'
 import MyButton from '../../UIcomponents/MyButton/MyButton'
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+import s from './Contacts.module.css'
+
 const ContactForm = () => {
-   const [form] = Form.useForm()
-   const onFinish = (values) => {}
+   const form = useRef()
+   const sendEmail = (e) => {
+      e.preventDefault()
+      emailjs.sendForm('service_luyejjj', 'template_hakwel8', form.current, 'da1XSSNDG4js2qQ23').then(
+         (result) => {
+            message.success('Message sent')
+         },
+         (error) => {
+            message.success(error.text)
+         }
+      )
+   }
+
    return (
-      <Form form={form} name="horizontal_login" layout="vertical" onFinish={onFinish}>
-         <Form.Item
-            name="Name"
-            rules={[
-               {
-                  required: true,
-                  message: 'Please input your name!',
-               },
-            ]}>
+      <form ref={form} onSubmit={sendEmail}>
+         <div>
+            <label className={s.label}>Name:</label>
             <Input
-               prefix={<SlUser color="var(--text-color)" className="site-form-item-icon" />}
-               placeholder="Name"
+               prefix={<SlUser style={{ marginRight: 10 }} color="var(--text-color)" size={20} />}
+               placeholder="Write your name"
+               className={s.input}
                style={{ padding: 10, backgroundColor: 'var(--background-color)' }}
+               type="text"
+               name="user_name"
             />
-         </Form.Item>
-         <Form.Item
-            name="Email"
-            rules={[
-               {
-                  required: true,
-                  message: 'Please input your email!',
-               },
-            ]}>
+         </div>
+         <div>
+            <label className={s.label}>Email:</label>
             <Input
-               prefix={<AiOutlineMail color="var(--text-color)" className="site-form-item-icon" />}
-               type="password"
-               placeholder="Email"
+               prefix={<AiOutlineMail style={{ marginRight: 10 }} color="var(--text-color)" size={22} />}
+               placeholder="Write your email"
+               className={s.input}
                style={{ padding: 10, backgroundColor: 'var(--background-color)' }}
+               type="email"
+               name="user_email"
             />
-         </Form.Item>
-         <Form.Item
-            name="password"
-            rules={[
-               {
-                  required: true,
-                  message: 'Please input your project!',
-               },
-            ]}>
+         </div>
+         <div>
+            <label className={s.label}>Message:</label>
             <TextArea
                allowClear
                autoSize={{ minRows: 8, maxRows: 20 }}
-               style={{ backgroundColor: 'var(--background-color)' }}
-               type="Project"
+               className={s.textarea}
+               name="message"
                placeholder="Write about your project"
             />
-         </Form.Item>
-         <Form.Item shouldUpdate>
-            {() => (
-               <MyButton
-                  type="primary"
-                  htmltype="submit"
-                  disabled={
-                     !form.isFieldsTouched(true) || !!form.getFieldsError().filter(({ errors }) => errors.length).length
-                  }
-                  style={{ fontSize: 20, padding: 0 }}>
-                  Send <BiSend style={{ marginLeft: 5 }} />
-               </MyButton>
-            )}
-         </Form.Item>
-      </Form>
+         </div>
+         <div style={{ padding: '20px 0' }}>
+            <MyButton type="submit" transparentbutton="true">
+               Sent <BiSend style={{ marginLeft: 5 }} />
+            </MyButton>
+         </div>
+      </form>
    )
 }
 

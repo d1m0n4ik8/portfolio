@@ -9,9 +9,11 @@
 .section__title {
    color: var(--text-color);
    font-size: 30px;
+   transition: color 250ms linear;
 }
 .section__description {
    color: var(--text-color-dark);
+   transition: color 250ms linear;
    font-size: 24px;
 }
 .w100 {
@@ -21,43 +23,23 @@
    height: 100%;
 }
 
-.ant-steps .ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-tail::after {
-   background-color: transparent;
-}
-.steps .ant-steps-item .ant-steps-item-container .ant-steps-item-content .ant-steps-item-title,
-.steps .ant-steps-item .ant-steps-item-container .ant-steps-item-content .ant-steps-item-description,
-.steps .ant-steps-item-wait .ant-steps-item-container .ant-steps-item-icon span {
-   color: var(--text-color);
-}
-.steps .ant-steps-item-wait .ant-steps-item-container .ant-steps-item-icon {
-   border-color: var(--text-color);
-}
-.ant-steps .ant-steps-item-container {
-   display: flex;
-   justify-content: center;
-}
-.ant-steps-item .ant-steps-item-content {
-   min-width: 150px;
-}
 .ant-tabs-nav-list .ant-tabs-tab {
    color: var(--text-color);
+   transition: color 250ms linear;
 }
 .ant-tabs-nav-list .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn,
 .ant-tabs-nav-list .ant-tabs-tab:hover {
    color: var(--text-color-dark);
+   transition: color 250ms linear;
 }
 .ant-tabs-nav-list .ant-tabs-ink-bar {
    background-color: var(--text-color-dark);
+   transition: background-color 250ms linear;
 }
 .ant-steps-item-tail::after {
    background-color: transparent;
 }
-.ant-input {
-   background-color: inherit;
-}
-.ant-input::placeholder {
-   color: var(--text-color);
-}
+
 .ant-carousel .slick-prev,
 .ant-carousel .slick-prev:hover {
    left: 10px;
@@ -76,10 +58,25 @@
    font-size: 30px;
    width: 30px;
    height: 30px;
+   transition: color 250ms linear;
+}
+.card {
+   background-color: var(--background-color);
+   height: 100%;
+   border-radius: 25px;
+   text-align: center;
+   font-size: 18px;
+   color: var(--text-color);
+   transition: color 250ms linear;
+   transition: background-color 250ms linear;
+}
+.ant-card.shadow {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /*==================   LOYOUT   ======================*/
 .app {
-   background: var(--background-gradient);
+   background-color: var(--background-color);
+   transition: background-color 250ms linear;
    overflow: hidden;
 }
 .container {
@@ -91,13 +88,7 @@
 .devider {
    background-color: var(--text-color);
    margin: 0;
-}
-.card {
-   background-color: var(--background-color);
-   border-radius: 25px;
-   text-align: center;
-   font-size: 18px;
-   color: var(--text-color);
+   transition: background-color 250ms linear;
 }
 
 /*==================   BREACKPOINTS   ======================*/
@@ -110,6 +101,6 @@
 }
 @media (max-width: 576px) {
    .container {
-      padding: 5px;
+      padding: 10px;
    }
 }

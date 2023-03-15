@@ -25,19 +25,20 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+   background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
    padding: 16px 24px;
    border-radius: 6px;
    width: 100%;
    height: 100%;
-   transition: 300ms;
+   transition: all 500ms;
 }
 
-.button:hover span {
-   background: none;
+.button span.transparent {
+   background: var(--background-color);
+   transition: background 250ms;
 }
-.transparent {
-   background-color: var(--background-color);
+.button:hover span {
+   background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
 }
 
 @media (min-width: 768px) {

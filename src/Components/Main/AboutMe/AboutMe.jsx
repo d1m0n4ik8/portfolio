@@ -2,6 +2,7 @@ import React from 'react'
 import s from './AboutMe.module.css'
 import { SectionHeader } from '../../UIcomponents/SectionHeader'
 import myPhoto from '../../../assets/images/my_photo2.jpg'
+import resume from '../../../assets/Svyryd_Dmytro_Frontend_developer_Resume.pdf'
 import Way from './Way'
 import { Col, Row } from 'antd'
 import Info from './Info'
@@ -19,14 +20,15 @@ export default function AboutMe() {
             <Col xs={24} sm={24} md={14}>
                <Info />
                <div className={s.description}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias fuga velit qui aliquid delectus
-                  neque, et hic, vel ipsam voluptates ducimus enim est. Aliquid quia suscipit odit. Assumenda, harum
-                  itaque!
+                  I am a quick learner and able to quickly adapt to new projects and technologies. I strive to develop
+                  my skills and constantly improve my knowledge in the field of web technologies.
                </div>
                <div>
-                  <MyButton transparentbutton="true">
-                     Download CV <HiOutlineDownload />
-                  </MyButton>
+                  <a href={resume} download="Svyryd_Dmytro_Frontend_developer_Resume.pdf">
+                     <MyButton transparentbutton="true">
+                        My resume <HiOutlineDownload />
+                     </MyButton>
+                  </a>
                </div>
             </Col>
          </Row>

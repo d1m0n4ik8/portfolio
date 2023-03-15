@@ -19,7 +19,7 @@ export default function Header() {
                   {
                      key: 'Dima Svyryd',
                      href: '#home',
-                     title: <div className="header__logo">Dima Svyryd</div>,
+                     title: <div className="header__logo">Dmytro Svyryd</div>,
                   },
                ]}
             />

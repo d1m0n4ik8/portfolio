@@ -7,6 +7,7 @@
    border-radius: 25px;
    font-size: 20px;
    color: var(--text-color);
+   transition: background-color 250ms linear, color 250ms linear;
 }
 .tab {
    font-size: 20px;

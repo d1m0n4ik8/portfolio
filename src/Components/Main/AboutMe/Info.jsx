@@ -22,7 +22,7 @@ export default function Info() {
    return (
       <Row gutter={[16, 16]}>
          <Col xs={24} sm={8}>
-            <Card bordered={false} className="card">
+            <Card bordered={false} className="card shadow">
                <Statistic
                   title={
                      <div className={s.statistic}>
@@ -35,11 +35,12 @@ export default function Info() {
                   valueStyle={{ color: 'var(--text-color)', textAlign: 'center' }}
                   suffix="+"
                />
-               Years experience
+               Years <br />
+               experience
             </Card>
          </Col>
          <Col xs={24} sm={8}>
-            <Card bordered={false} className="card">
+            <Card bordered={false} className="card shadow">
                <Statistic
                   title={
                      <div className={s.statistic}>
@@ -47,16 +48,16 @@ export default function Info() {
                         Portfolio
                      </div>
                   }
-                  value={20}
+                  value={10}
                   formatter={formatter}
                   valueStyle={{ color: 'var(--text-color)', textAlign: 'center' }}
                   suffix="+"
                />
-               Compleated Projects
+               Compleated <br /> Projects
             </Card>
          </Col>
          <Col xs={24} sm={8}>
-            <Card bordered={false} className="card">
+            <Card bordered={false} className="card shadow">
                <Statistic
                   title={
                      <div className={s.statistic}>
@@ -64,12 +65,12 @@ export default function Info() {
                         Certification
                      </div>
                   }
-                  value={20}
+                  value={8}
                   formatter={formatter}
                   valueStyle={{ color: 'var(--text-color)', textAlign: 'center' }}
                   suffix="+"
                />
-               Finished Courses
+               Finished <br /> Courses
             </Card>
          </Col>
       </Row>

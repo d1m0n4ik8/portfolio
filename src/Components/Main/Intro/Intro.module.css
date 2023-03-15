@@ -13,6 +13,8 @@
    width: 320px;
    height: 320px;
    object-fit: cover;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
    animation: intro__avatar 5s ease-in-out infinite;
    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
    transition: all 1s ease-in-out;
@@ -28,6 +30,7 @@
    text-decoration: none;
    font-size: 30px;
    color: var(--text-color);
+   transition: color 250ms linear;
 }
 .intro__icon:hover {
    color: var(--text-color-dark);
@@ -36,18 +39,17 @@
    margin-bottom: 10px;
    font-size: 45px;
 }
-.intro__proffesion {
-   font-size: 34px;
-   margin-bottom: 20px;
-}
+
 .intro__descriprion {
    font-size: 28px;
    padding: 20px 40px;
 }
 
 .intro__about {
+   text-align: justify;
    font-size: 24px;
-   line-height: 50px;
+   line-height: 1.5em;
+   padding-bottom: 20px;
 }
 
 @keyframes intro__avatar {
@@ -110,10 +112,6 @@
    .intro__title {
       text-align: start;
       font-size: 34px;
-   }
-   .intro__proffesion {
-      text-align: start;
-      font-size: 25px;
    }
    .intro__about {
       text-align: start;

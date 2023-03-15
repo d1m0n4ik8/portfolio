@@ -1,6 +1,7 @@
 .header {
    width: 100%;
-   background: var(--background-gradient);
+   background-color: var(--background-color);
+   transition: background-color 250ms linear, color 250ms linear;
    color: var(--text-color);
    position: fixed;
    z-index: 3;
@@ -9,7 +10,7 @@
    box-shadow: inset 0 0 1px #000, 0 0 2px #000;
 }
 .header__logo {
-   font-size: 30px;
+   font-size: 28px;
    font-style: italic;
    font-weight: 500;
    letter-spacing: 2px;
@@ -30,9 +31,12 @@
    background-color: transparent;
 }
 .menu__item {
+   font-size: 16px;
    position: relative;
    color: var(--text-color);
+   transition: color 250ms linear;
    padding: 10px;
+   margin-right: 15px;
 }
 
 .menu__item::after {
@@ -59,6 +63,9 @@
    cursor: pointer;
    color: var(--text-color-dark);
 }
+.ant-anchor-wrapper .ant-anchor .ant-anchor-link {
+   padding: 0;
+}
 .ant-anchor-wrapper .ant-anchor .ant-anchor-ink {
    height: 0px;
 }
@@ -69,18 +76,19 @@
 }
 .switch {
    cursor: pointer;
-   margin: 0 20px;
 }
 .menu {
    display: flex;
 }
 .menu__button {
+   margin-left: 10px;
    font-size: 24px;
    display: none;
    cursor: pointer;
 }
 .ant-drawer-content.menu__drawer {
    background-color: var(--background-color);
+   transition: background-color 250ms linear;
 }
 
 .menu__drawer .ant-drawer-body {
@@ -89,14 +97,15 @@
 }
 
 @media (max-width: 992px) {
+   .menu__item {
+      font-size: 16px;
+      margin-right: 10px;
+   }
    .header__logo {
       font-size: 24px;
    }
    .header__menu {
       padding: 5px 10px;
-   }
-   .switch {
-      margin: 0 5px;
    }
 }
 
@@ -113,6 +122,9 @@
    .menu__item {
       width: 100%;
       font-size: 24px;
+   }
+   .switch {
+      padding: 0 5px;
    }
 }
 

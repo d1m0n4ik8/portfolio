@@ -6,12 +6,15 @@
    height: 325px;
    object-fit: cover;
    border-radius: 50px;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .statistic {
    display: flex;
    align-items: center;
    flex-direction: column;
    color: var(--text-color-dark);
+   transition: color 250ms linear;
    font-size: 24px;
 }
 .statistic__icon {
@@ -32,11 +35,27 @@
 }
 .timeLine div {
    color: var(--text-color);
+   transition: color 250ms linear;
 }
 
 .tab__icon {
    font-size: 24px;
    margin-left: 10px;
+}
+.timeLine {
+   padding-top: 20px;
+}
+.timelineItem {
+   padding-bottom: 0;
+}
+.timelineItem div {
+   color: var(--text-color);
+   font-size: 18px;
+}
+.steps,
+.stepItem {
+   color: var(--text-color);
+   font-size: 20px;
 }
 
 @media (max-width: 992px) {
@@ -67,6 +86,11 @@
    }
    .description {
       font-size: 20px;
+   }
+   .tab,
+   .timelineItem div,
+   .stepItem {
+      font-size: 16px;
    }
 }
 @media (max-width: 576px) {

@@ -1,7 +1,7 @@
 import { Anchor, Col, Row, Tooltip } from 'antd'
 import React from 'react'
 import myPhoto from '../../../assets/images/my_photo1.jpg'
-import { RiGithubFill, RiLinkedinBoxFill, RiTelegramFill, RiReactjsLine } from 'react-icons/ri'
+import { RiGithubFill, RiLinkedinBoxFill, RiTelegramFill } from 'react-icons/ri'
 import { BiSend } from 'react-icons/bi'
 import { GiHand } from 'react-icons/gi'
 import { SiCodewars } from 'react-icons/si'
@@ -25,7 +25,7 @@ export default function Intro() {
                </Tooltip>
                <Tooltip title="LinkedIn" placement="left">
                   <a
-                     href="https://www.linkedin.com/in/dima-svyryd-687855242/"
+                     href="https://www.linkedin.com/in/dima-svyryd-687855242"
                      className={s.intro__icon}
                      target="_blank"
                      rel="noreferrer">
@@ -50,11 +50,11 @@ export default function Intro() {
                <div className={s.intro__title}>
                   Hi, I'm Dima <GiHand />
                </div>
-               <div className={s.intro__proffesion}>
-                  Frontend Developer <RiReactjsLine />
-               </div>
-               <div className={s.intro__about}>
-                  Hight level experience in web delopment
+               <div>
+                  <div className={s.intro__about}>
+                     A Front-End Developer with high-level experience specializing in web development, HTML, CSS,
+                     JavaScript, React, Redux, Bootstrap and Ant Design.
+                  </div>
                   <Anchor
                      style={{ marginLeft: -16 }}
                      affix={false}
@@ -63,7 +63,7 @@ export default function Intro() {
                            key: 'intro',
                            href: '#contacts',
                            title: (
-                              <MyButton className="button" transparentbutton="true">
+                              <MyButton transparentbutton="true">
                                  Contact me <BiSend />
                               </MyButton>
                            ),
