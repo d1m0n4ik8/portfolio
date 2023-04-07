@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5091faa7.css",
-    "main.js": "/portfolio/static/js/main.958a2ed5.js",
+    "main.js": "/portfolio/static/js/main.4a3904ed.js",
     "static/media/renome.jpg": "/portfolio/static/media/renome.cbb0ea60ad24f6ce9373.jpg",
+    "static/media/my_photo2.jpg": "/portfolio/static/media/my_photo2.dda685a4d3021537d40d.jpg",
+    "static/media/my_photo1.jpg": "/portfolio/static/media/my_photo1.e8ed2b004a9465e19e65.jpg",
     "static/media/aim_trainer.png": "/portfolio/static/media/aim_trainer.2af46eb3408e2d82e452.png",
-    "static/media/my_photo2.jpg": "/portfolio/static/media/my_photo2.adcff503d1fde87da3e8.jpg",
-    "static/media/my_photo1.jpg": "/portfolio/static/media/my_photo1.173d08556bcf02238ccc.jpg",
     "static/media/social_network.png": "/portfolio/static/media/social_network.f71466034e325b9c1ec8.png",
-    "static/media/Svyryd_Dmytro_Frontend_developer_Resume.pdf": "/portfolio/static/media/Svyryd_Dmytro_Frontend_developer_Resume.1a21b6ff24896868004c.pdf",
-    "static/media/cnap.png": "/portfolio/static/media/cnap.2fae117069019bd34048.png",
     "static/media/html.jpg": "/portfolio/static/media/html.3be06c1b7eb1c4b0140d.jpg",
     "static/media/js_advanced.jpg": "/portfolio/static/media/js_advanced.7fdc65920e10b614935e.jpg",
     "static/media/js_started.jpg": "/portfolio/static/media/js_started.c44087459ba2ff33e14f.jpg",
+    "static/media/Svyryd_Dmytro_Frontend_developer_Resume.pdf": "/portfolio/static/media/Svyryd_Dmytro_Frontend_developer_Resume.99eae741d6400248efed.pdf",
     "static/media/memory_game.png": "/portfolio/static/media/memory_game.8d559429c12f9c0a1565.png",
     "static/media/diya.png": "/portfolio/static/media/diya.d3206f7ee132138198d2.png",
     "static/media/britlex.png": "/portfolio/static/media/britlex.e202dbf58dd2d93f254b.png",
@@ -20,10 +19,10 @@
     "static/media/cybersecurity.png": "/portfolio/static/media/cybersecurity.8df07f8f028cfb836b0c.png",
     "index.html": "/portfolio/index.html",
     "main.5091faa7.css.map": "/portfolio/static/css/main.5091faa7.css.map",
-    "main.958a2ed5.js.map": "/portfolio/static/js/main.958a2ed5.js.map"
+    "main.4a3904ed.js.map": "/portfolio/static/js/main.4a3904ed.js.map"
   },
   "entrypoints": [
     "static/css/main.5091faa7.css",
-    "static/js/main.958a2ed5.js"
+    "static/js/main.4a3904ed.js"
   ]
 }
