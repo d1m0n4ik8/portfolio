@@ -4,7 +4,6 @@ import { SectionHeader } from '../../UIcomponents/SectionHeader'
 import s from './Portfolio.module.css'
 import social_network from '../../../assets/images/social_network.png'
 import aim_trainer from '../../../assets/images/aim_trainer.png'
-import cnap from '../../../assets/images/cnap.png'
 import britlex from '../../../assets/images/britlex.png'
 import memory_game from '../../../assets/images/memory_game.png'
 import elements from '../../../assets/images/elements.png'
@@ -33,14 +32,6 @@ export default function Portfolio() {
       },
       {
          key: '3',
-         image: cnap,
-         title: 'Cnap',
-         demo: 'https://d1m0n4ik8.github.io/cnap/',
-         github: 'https://github.com/d1m0n4ik8/cnap',
-         tag: 'web',
-      },
-      {
-         key: '4',
          image: britlex,
          title: 'britlex',
          demo: 'https://d1m0n4ik8.github.io/britlex/',
@@ -48,7 +39,7 @@ export default function Portfolio() {
          tag: 'web',
       },
       {
-         key: '5',
+         key: '4',
          image: memory_game,
          title: 'Memory game',
          demo: 'https://d1m0n4ik8.github.io/Applications/memory/memory.html',
@@ -56,7 +47,7 @@ export default function Portfolio() {
          tag: 'app',
       },
       {
-         key: '6',
+         key: '5',
          image: elements,
          title: '100 elements',
          demo: 'https://d1m0n4ik8.github.io/Applications/100el/elements.html',
@@ -64,7 +55,7 @@ export default function Portfolio() {
          tag: 'app',
       },
       {
-         key: '7',
+         key: '6',
          image: board,
          title: 'Board',
          demo: 'https://d1m0n4ik8.github.io/Applications/board/board.html',
@@ -72,7 +63,7 @@ export default function Portfolio() {
          tag: 'app',
       },
       {
-         key: '8',
+         key: '7',
          image: tic_tac_toe,
          title: 'Tic tac toe game',
          demo: 'https://d1m0n4ik8.github.io/Applications/tic_tac_toe/tic_tac_toe.html',
@@ -80,7 +71,7 @@ export default function Portfolio() {
          tag: 'app',
       },
       {
-         key: '9',
+         key: '8',
          image: todo,
          title: 'Todo list',
          demo: 'https://d1m0n4ik8.github.io/Applications/todo/todo.html',

@@ -78,7 +78,7 @@ const FooterComponent = () => {
                   <a href="https://t.me/d1m0n4ik_1" target="_blank" rel="noreferrer">
                      <BsTelegram />
                   </a>
-                  <a href="https://www.linkedin.com/in/dima-svyryd-687855242/" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/dmytro-svyryd//" target="_blank" rel="noreferrer">
                      <BsLinkedin />
                   </a>
                </Row>

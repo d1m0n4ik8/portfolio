@@ -25,7 +25,7 @@ export default function Intro() {
                </Tooltip>
                <Tooltip title="LinkedIn" placement="left">
                   <a
-                     href="https://www.linkedin.com/in/dima-svyryd-687855242"
+                     href="https://www.linkedin.com/in/dmytro-svyryd/"
                      className={s.intro__icon}
                      target="_blank"
                      rel="noreferrer">

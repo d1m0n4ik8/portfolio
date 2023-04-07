@@ -95,6 +95,13 @@ export default function Skills() {
                         </Space>
                         <div>Basic</div>
                      </Col>
+                     <Col span={12} className={s.card__col}>
+                        <Space>
+                           <BsFillPatchCheckFill />
+                           MongoDB
+                        </Space>
+                        <div>Basic</div>
+                     </Col>
                   </Row>
                </div>
             </Col>

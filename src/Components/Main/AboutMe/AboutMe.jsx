@@ -20,8 +20,9 @@ export default function AboutMe() {
             <Col xs={24} sm={24} md={14}>
                <Info />
                <div className={s.description}>
-                  I am a quick learner and able to quickly adapt to new projects and technologies. I strive to develop
-                  my skills and constantly improve my knowledge in the field of web technologies.
+                  I passed several courses and learned all necessary knowledge related to Frontend development. I'm a
+                  quick learner and able to quickly adapt to new projects and technologies. I strive to develop my
+                  skills and constantly improve my knowledge in the field of web technologies.
                </div>
                <div>
                   <a href={resume} download="Svyryd_Dmytro_Frontend_developer_Resume.pdf">
