@@ -1,101 +1,101 @@
 .aboutMe {
-   padding: 10px;
+	padding: 10px;
 }
 .photo {
-   width: 325px;
-   height: 325px;
-   object-fit: cover;
-   border-radius: 50px;
-   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-      rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+	width: 325px;
+	height: 325px;
+	object-fit: cover;
+	border-radius: 50px;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+		rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 .statistic {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   color: var(--text-color-dark);
-   transition: color 250ms linear;
-   font-size: 24px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: var(--text-color-dark);
+	transition: color 250ms linear;
+	font-size: 24px;
 }
 .statistic__icon {
-   color: var(--text-color);
-   font-size: 30px;
+	color: var(--text-color);
+	font-size: 30px;
 }
 .description {
-   padding: 15px 10px;
-   font-size: 24px;
-   text-align: justify;
-   text-indent: 20px;
+	padding: 15px 0;
+	font-size: 24px;
+	text-align: justify;
+	text-indent: 20px;
 }
 
 .tab {
-   font-size: 20px;
-   display: flex;
-   align-items: center;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
 }
 .timeLine div {
-   color: var(--text-color);
-   transition: color 250ms linear;
+	color: var(--text-color);
+	transition: color 250ms linear;
 }
 
 .tab__icon {
-   font-size: 24px;
-   margin-left: 10px;
+	font-size: 24px;
+	margin-left: 10px;
 }
 .timeLine {
-   padding-top: 20px;
+	padding-top: 20px;
 }
 .timelineItem {
-   padding-bottom: 0;
+	padding-bottom: 0;
 }
 .timelineItem div {
-   color: var(--text-color);
-   font-size: 18px;
+	color: var(--text-color);
+	font-size: 18px;
 }
 .steps,
 .stepItem {
-   color: var(--text-color);
-   font-size: 20px;
+	color: var(--text-color);
+	font-size: 20px;
 }
 
 @media (max-width: 992px) {
-   .photo {
-      width: 290px;
-      height: 290px;
-   }
-   .statistic {
-      font-size: 18px;
-   }
-   .statistic__icon {
-      font-size: 20px;
-   }
-   .description {
-      font-size: 18px;
-   }
+	.photo {
+		width: 290px;
+		height: 290px;
+	}
+	.statistic {
+		font-size: 18px;
+	}
+	.statistic__icon {
+		font-size: 20px;
+	}
+	.description {
+		font-size: 18px;
+	}
 }
 @media (max-width: 768px) {
-   .photo {
-      width: 320px;
-      height: 320px;
-   }
-   .statistic {
-      font-size: 20px;
-   }
-   .statistic__icon {
-      font-size: 24px;
-   }
-   .description {
-      font-size: 20px;
-   }
-   .tab,
-   .timelineItem div,
-   .stepItem {
-      font-size: 16px;
-   }
+	.photo {
+		width: 320px;
+		height: 320px;
+	}
+	.statistic {
+		font-size: 20px;
+	}
+	.statistic__icon {
+		font-size: 24px;
+	}
+	.description {
+		font-size: 20px;
+	}
+	.tab,
+	.timelineItem div,
+	.stepItem {
+		font-size: 16px;
+	}
 }
 @media (max-width: 576px) {
-   .photo {
-      width: 250px;
-      height: 250px;
-   }
+	.photo {
+		width: 250px;
+		height: 250px;
+	}
 }
